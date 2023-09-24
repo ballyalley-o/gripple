@@ -1,4 +1,2 @@
-import logo from './logo.svg'
-import gripple from './gripple.svg'
-
-export { logo, gripple }
+export { default as logo } from './logo.svg'
+export { default as gripple } from './gripple.svg'

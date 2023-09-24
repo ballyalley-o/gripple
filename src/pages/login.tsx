@@ -8,10 +8,10 @@ import { ThemedTitleV2 } from '@refinedev/mui'
 // interfaces
 import { CredentialResponse } from '../interfaces/google'
 // assets
-import { logo, gripple } from 'assets'
+// import { logo } from '../assets'
+import { gripple } from '../constants'
 
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_KEY
-console.log(GOOGLE_CLIENT_ID)
 
 export const Login: React.FC = () => {
   const { mutate: login } = useLogin<CredentialResponse>()
@@ -68,8 +68,9 @@ export const Login: React.FC = () => {
             fontSize: '22px',
             justifyContent: 'center',
           }}
+          icon={gripple}
+          text='gripple'
         />
-
         <GoogleButton />
 
         <Typography align='center' color={'text.secondary'} fontSize='12px'>
